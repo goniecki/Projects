@@ -16,12 +16,12 @@ while True:
       if playerMove == 'r' or playerMove == 'p' or playerMove == 's':
         break
       print('Type one of r, p, s, or q.')
-      if(playerMove == 'r'):
-        print('ROCK versus...')
-      elif(playerMove == 'p'):
-        print('PAPER versus...')
-      elif(playerMove == 's'):
-        print('SCISSORS versus...')
+    if(playerMove == 'r'):
+      print('ROCK versus...')
+    elif(playerMove == 'p'):
+      print('PAPER versus...')
+    elif(playerMove == 's'):
+      print('SCISSORS versus...')
 
     randomNumber = random.randint(1, 3)
     if randomNumber == 1:
@@ -55,4 +55,3 @@ while True:
     elif playerMove == 's' and computerMove == 'r':
       print('You lose!')
       losses = losses + 1
-
