@@ -12,6 +12,6 @@ def Collatz(number):
 
 
 number = int(input('Enter a number: '))
-print(f'Input: ', number)
+print(f'Input: {number}')
 print('Sequence: ', end='')
 Collatz(number)
