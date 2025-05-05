@@ -10,8 +10,17 @@ def Collatz(number):
   print(number, end=' ')
   return Collatz(number)
 
-
-number = int(input('Enter a number: '))
+while True:
+  try:
+    number = int(input('Enter a number: '))
+    if number <= 0:
+      print('Invalid input. Try again.')
+      continue
+  except ValueError:
+    print('Invalid input. Try again.')
+    continue
+  else:
+    break
 print(f'Input: {number}')
 print('Sequence: ', end='')
 Collatz(number)
